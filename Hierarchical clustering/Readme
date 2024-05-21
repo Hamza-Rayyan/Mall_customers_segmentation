@@ -1,1 +1,24 @@
+* Hierarchical clustering(HC)
 
+HC is same as k-means both results are similar but the inside alg work process is different.
+HC has : Agglomerative and Divisive we are going with Agglomerative 
+
+* Agglomerative HC:
+
+STEP 1: Make each data point a single-point cluster That forms N clusters
+STEP 2: Take the two closest data points and make them one cluster That forms N-1 
+clusters
+STEP 3: Take the two closest clusters and make them one cluster That forms N - 2 
+clusters
+STEP 4: Repeat STEP 3 until there is only one cluster
+
+Internal this uses Euclidean Distance between two points
+
+* Dendograms:
+Basically they are the memory plots of the distance measured of two poins and for each concatenation of points or cluster we plot a dendogram.
+
+-we calculate the largest virtical lines un-interrupted by any horizontal line.
+-Once we have so we make a horizontal line on the virtical largest distance line
+-under that horizontal line we calculate number of cluster only under it and make the final clusters prediction 
+
+in our case we have gotten 5 lines under that means 5 cluster would we a appropriate number.
