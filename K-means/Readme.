@@ -1,1 +1,13 @@
+* Elbow Method.
+By seeing our data we can cluster them into 5 clusters, but in-case if we dont know how many cluster are suited for our dataset we can go for Elbow method.
+WCSS= ∑Pi in Cluster1 distance(Pi C1)2 +∑Pi in Cluster2distance(Pi C2)2+∑Pi in CLuster3 distance(Pi C3)2
+basically looks at the distance between each points and centroids and adjust and square it.
+the more cluster we have the smaller WCSS gets.
+
+* K-means.
+we have used K-means++ alg for initializing the centroids(cluster center) in the K-means clustering alg
+after that normal k-means process continues.
+
+in our case we have gotten 5 clusters.
+
 
